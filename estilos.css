@@ -8,10 +8,10 @@
 }
 
 header{
-
-    background: #12c2e9;
+    background-color: #000;
+    /* background: #12c2e9;
     background: -webkit-linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)),;
-    background: linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)), url(img/teclado2.jpg);
+    background: linear-gradient(to right, rgba(246, 79, 90, 0.603), rgba(196, 113, 237, 0.603), rgba(18, 194, 233, 0.603)), url(img/teclado2.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -22,12 +22,40 @@ header{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
 }
 
+.titulokeylab {
+    margin: auto;
+
+}
 
 .keylabtitulo{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+    color: #fff;
+    position: relative;
+    font-size: 90px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 90px;
     color: #fff;
     text-align: center;
+    position: relative; */
+}
+
+span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #000;
+    border-left: 2px solid #fff;
+
+    animation: maquina 5s infinite alternate steps(7);
+    }
+
+@keyframes maquina {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
 }
 
 body{
